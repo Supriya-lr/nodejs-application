@@ -3,11 +3,11 @@ pipeline {
     agent any
 
     tools {
-        nodejs 'Node-20.19.3'
+        nodejs 'NodeJS-20.19.3'
     }
 
     environment {
-        REMOTE_HOST = '172.31.27.188' // Replace with your server's IP or hostname
+        REMOTE_HOST = '172.31.24.155' // Replace with your server's IP or hostname
         REMOTE_USER = 'ec2-user'
         REMOTE_PATH = '/home/ec2-user/nodejs-app'
         SSH_CREDENTIALS = 'NodeServerSSHKey'
